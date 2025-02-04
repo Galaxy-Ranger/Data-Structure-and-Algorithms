@@ -2,7 +2,7 @@ L = [74, 32, 89, 55, 21, 64]
 
 print(L)
 
-if (len(L) < 1):
+if (len(L) == 1):
     print("Single Element is always sorted.")
 else:
     for i in range(len(L)):
