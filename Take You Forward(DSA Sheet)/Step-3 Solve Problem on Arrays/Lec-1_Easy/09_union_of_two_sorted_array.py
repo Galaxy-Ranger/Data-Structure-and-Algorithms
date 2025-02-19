@@ -5,6 +5,7 @@ def find_union(a, b):
 
   while i < len(a) and j < len(b):
     if a[i] <= b[j]:
+      #! this is very important condition to handle when the first element is union element.
       if len(union_list) == 0 or union_list[-1] != a[i]:
         union_list.append(a[i])
       i += 1
